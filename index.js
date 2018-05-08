@@ -22,6 +22,9 @@ function emitwebXML(stream, opts) {
     '<welcome-file-list>' +
     '<welcome-file>' + opts.welcome + '</welcome-file>' +
     '</welcome-file-list>\n' +
+    '<error-page>' +
+    '<error-code>' + opts.errorPage.errorCode + '</error-code>' +  '<location>' + opts.errorPage.location + '</location>' +
+    '</error-page>\n' +
     mm.join('\n');
 
 
